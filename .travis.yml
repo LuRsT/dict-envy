@@ -5,6 +5,12 @@ language: python
 python:
   - '3.6'
 
+script:
+  - python setup.py test
+
+install:
+  - python setup.py install
+
 stages:
   - test
   - name: deploy
@@ -13,8 +19,6 @@ stages:
 jobs:
   include:
     - stage: test
-      install: python setup.py install
-      script: python setup.py test
     - stage: deploy
       script: skip
       deploy:
