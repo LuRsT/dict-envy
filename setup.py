@@ -13,6 +13,7 @@ setup(
     author_email='roman.tomjak@made.com',
     url='http://github.com/madedotcom/dict-envy',
     license='MIT',
+    py_modules=['dictenvy'],
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
     platforms='any',
